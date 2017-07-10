@@ -25,4 +25,4 @@ class userzy(models.Model):
     nazwisko = models.CharField(max_length=50)
 
     def __str__(self):
-        return '{} - {}.{}'.format(nr, self.imie[:3], self.nazwisko[:3])
+        return '{} - {}.{}'.format(self.nr, self.imie[:3], self.nazwisko[:3])
