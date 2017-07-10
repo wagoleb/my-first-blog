@@ -18,3 +18,8 @@ class post(models.Model):
 
     def __str__(self):
         return self.title
+
+class userzy(models.Model):
+    nr = models.AutoField(primary_key=True)
+    imie = models.CharField(max_length=20)
+    nazwisko = models.CharField(max_length=50)
