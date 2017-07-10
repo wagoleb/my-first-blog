@@ -23,3 +23,6 @@ class userzy(models.Model):
     nr = models.AutoField(primary_key=True)
     imie = models.CharField(max_length=20)
     nazwisko = models.CharField(max_length=50)
+
+    def __str__(self):
+        return '{} - {}.{}'.format(nr, self.imie[:3], self.nazwisko[:3])
